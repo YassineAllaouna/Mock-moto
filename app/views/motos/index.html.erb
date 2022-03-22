@@ -1,1 +1,21 @@
-<h1>#index</h1>
+<div class="container">
+  <h1>All Motos</h1>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <% @motos.each do |moto| %>
+        <div class="card-trip">
+          <img src="https://images.caradisiac.com/logos/0/7/1/9/270719/S7-essai-yamaha-mt-10-mod-2022-si-differente-dans-la-difference-194977.jpg" alt="moto">
+          <h2 class="card-trip-infos"><%= link_to moto.brand, moto_path(moto.id) %></h2>
+          <p><%= moto.address %></p>
+                <%= link_to "Edit", edit_moto_path(moto.id) %>
+                <%= link_to "Delete",
+                moto_path(moto.id),
+                method: :delete,
+                data: { confirm: "Are you sure?" } %>
+            </li>
+          <% end %>
+        </div>
+      <%= link_to "Create a moto", new_moto_path, class: "mt-3" %>
+    </div>
+  </div>
+</div>
