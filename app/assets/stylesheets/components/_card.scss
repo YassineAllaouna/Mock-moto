@@ -38,12 +38,14 @@
   background: white;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 100%;
 }
 
 .card-trip > img {
   height: 500px;
   width: 100%;
   object-fit: cover;
+  background-size: center;
 }
 
 .card-trip h2 {
@@ -72,4 +74,45 @@
   right: 16px;
   top: -20px;
   width: 40px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+
+}
+@media (max-width: 450px){
+  .wrapper{
+    grid-template-columns: 1fr;
+  }
+}
+
+.wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: red;
+  column-gap: 10px;
+  row-gap: 10px;
+
+}
+@media (max-width: 450px){
+  .wrapper2{
+    grid-template-columns: 1fr;
+  }
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }

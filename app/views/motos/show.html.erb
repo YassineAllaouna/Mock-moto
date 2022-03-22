@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="card-trip">
+      <%# <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" /> %>
+      <div class="card-trip-infos">
+        <img src="https://images.caradisiac.com/logos/0/7/1/9/270719/S7-essai-yamaha-mt-10-mod-2022-si-differente-dans-la-difference-194977.jpg" alt="moto">
+          <h2><%= @moto.brand %></h2>
+          <p><i class="fa-solid fa-motorcycle"></i> <%= @moto.model %> </p>
+          <p><i class="fas fa-car-battery"></i> <%= @moto.power %> </p>
+          <p><i class="fa-solid fa-road"></i></i> <%= @moto.kilometers%> km </p>
+          <p><i class="fa-solid fa-house"></i> <%= @moto.address %></p>
+          <%= link_to "All Motos", motos_path, class:"btn btn-flat mx-4 mb-3" %>
+      </div>
+  </div>
+</div>
