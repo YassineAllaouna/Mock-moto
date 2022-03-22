@@ -39,6 +39,7 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   width: 100%;
+  text-decoration: none;
 }
 
 .card-trip > img {
@@ -54,6 +55,14 @@
   margin: 0;
 }
 
+.card-trip-infos h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
 .card-trip p {
   font-size: 12px;
   opacity: .7;
@@ -67,6 +76,8 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+  text-decoration: none;
+  color: black;
 }
 
 .card-trip-infos .card-trip-user {

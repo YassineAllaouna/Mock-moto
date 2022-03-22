@@ -4,7 +4,7 @@
       <% @motos.each do |moto| %>
         <div class="card-trip">
           <img src="https://images.caradisiac.com/logos/0/7/1/9/270719/S7-essai-yamaha-mt-10-mod-2022-si-differente-dans-la-difference-194977.jpg" alt="moto">
-          <h2 class="card-trip-infos"><%= link_to moto.brand, moto_path(moto.id) %></h2>
+          <h2 class="card-trip-infos"><%= link_to moto.brand, moto_path(moto.id), class:"card-trip-infos" %></h2>
           <p class="card-trip-infos"><%= moto.address %></p>
                 <%# <%= link_to "Edit", edit_moto_path(moto.id), class:"btn btn-flat-index mb-3" %>
                 <%# <%= link_to "Delete",
