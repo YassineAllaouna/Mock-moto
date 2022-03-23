@@ -128,7 +128,14 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 .map {
-  height: 100vh;
   position: sticky;
   top: 0;
+}
+.infos{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.infos .button-show{
+  align-items: center;
 }
