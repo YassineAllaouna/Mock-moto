@@ -1,11 +1,20 @@
 class MotosController < ApplicationController
-
   def index
     @motos = Moto.all
+    @markers = @motos.geocoded.map do |moto|
+      {
+        lat: moto.latitude,
+        lng: moto.longitude
+      }
+    end
   end
 
   def show
     @moto = Moto.find(params[:id])
+    @markers = [{
+      lat: @moto.latitude,
+      lng: @moto.longitude
+    }]
   end
 
   def new
